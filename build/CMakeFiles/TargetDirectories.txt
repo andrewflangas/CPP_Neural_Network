@@ -1,0 +1,3 @@
+/machine_learning/cppNerals/build/CMakeFiles/rebuild_cache.dir
+/machine_learning/cppNerals/build/CMakeFiles/edit_cache.dir
+/machine_learning/cppNerals/build/CMakeFiles/NeuralNetwork.dir
