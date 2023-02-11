@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/NeuralNetwork.dir/src/layer.cpp.o CMakeFiles/NeuralNetwork.dir/src/main.cpp.o CMakeFiles/NeuralNetwork.dir/src/neural_network.cpp.o CMakeFiles/NeuralNetwork.dir/src/neuron.cpp.o -o NeuralNetwork  /usr/lib/x86_64-linux-gnu/libboost_random.so.1.74.0 /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0 

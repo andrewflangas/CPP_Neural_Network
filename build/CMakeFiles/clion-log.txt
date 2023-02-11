@@ -1,5 +1,0 @@
-/opt/clion-2022.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Machine_Learning/CPP_Neural_Network -B /Machine_Learning/CPP_Neural_Network/build
--- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: random 
--- Configuring done
--- Generating done
--- Build files have been written to: /Machine_Learning/CPP_Neural_Network/build
