@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/machine_learning/cppNerals/src/layer.cpp" "CMakeFiles/NeuralNetwork.dir/src/layer.cpp.o" "gcc" "CMakeFiles/NeuralNetwork.dir/src/layer.cpp.o.d"
-  "/machine_learning/cppNerals/src/main.cpp" "CMakeFiles/NeuralNetwork.dir/src/main.cpp.o" "gcc" "CMakeFiles/NeuralNetwork.dir/src/main.cpp.o.d"
-  "/machine_learning/cppNerals/src/neural_network.cpp" "CMakeFiles/NeuralNetwork.dir/src/neural_network.cpp.o" "gcc" "CMakeFiles/NeuralNetwork.dir/src/neural_network.cpp.o.d"
-  "/machine_learning/cppNerals/src/neuron.cpp" "CMakeFiles/NeuralNetwork.dir/src/neuron.cpp.o" "gcc" "CMakeFiles/NeuralNetwork.dir/src/neuron.cpp.o.d"
+  "/Machine_Learning/CPP_Neural_Network/src/layer.cpp" "CMakeFiles/NeuralNetwork.dir/src/layer.cpp.o" "gcc" "CMakeFiles/NeuralNetwork.dir/src/layer.cpp.o.d"
+  "/Machine_Learning/CPP_Neural_Network/src/main.cpp" "CMakeFiles/NeuralNetwork.dir/src/main.cpp.o" "gcc" "CMakeFiles/NeuralNetwork.dir/src/main.cpp.o.d"
+  "/Machine_Learning/CPP_Neural_Network/src/neural_network.cpp" "CMakeFiles/NeuralNetwork.dir/src/neural_network.cpp.o" "gcc" "CMakeFiles/NeuralNetwork.dir/src/neural_network.cpp.o.d"
+  "/Machine_Learning/CPP_Neural_Network/src/neuron.cpp" "CMakeFiles/NeuralNetwork.dir/src/neuron.cpp.o" "gcc" "CMakeFiles/NeuralNetwork.dir/src/neuron.cpp.o.d"
   )
 
 # Targets to which this target links.

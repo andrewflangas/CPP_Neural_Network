@@ -4,7 +4,7 @@
 #include <iostream>
 
 int main(){
-    NeuralNetwork nn(2, 2, 1);
+    NeuralNetwork nn({2, 2, 1});
     std::vector<double> inputs {1, 0};
     std::vector<double> targets {1};
     int epochs = 5000;
@@ -16,7 +16,7 @@ int main(){
         }
     }
 
-    std::vector<double> results == nn.activate(inputs);
+    std::vector<double> results = nn.activate(inputs);
     std::cout << "Results: " << results[0] << std::endl;
     return 0;
 }

@@ -5,85 +5,144 @@
 		<Option title="NeuralNetwork"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\usr\;CMake Files\..\..\usr\lib\;CMake Files\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.74.0\;CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.74.0\;CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_random-1.74.0\;CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.74.0\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/machine_learning/cppNerals/build"/>
+				<Option working_dir="/Machine_Learning/CPP_Neural_Network/build"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/machine_learning/cppNerals/build"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/machine_learning/cppNerals/build"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="NeuralNetwork">
-				<Option output="/machine_learning/cppNerals/build/NeuralNetwork" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/machine_learning/cppNerals/build"/>
+				<Option output="/Machine_Learning/CPP_Neural_Network/build/NeuralNetwork" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Machine_Learning/CPP_Neural_Network/build"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/machine_learning/cppNerals/include"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_RANDOM_DYN_LINK"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add directory="/Machine_Learning/CPP_Neural_Network/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 NeuralNetwork"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 NeuralNetwork"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="NeuralNetwork/fast">
-				<Option output="/machine_learning/cppNerals/build/NeuralNetwork" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/machine_learning/cppNerals/build"/>
+				<Option output="/Machine_Learning/CPP_Neural_Network/build/NeuralNetwork" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Machine_Learning/CPP_Neural_Network/build"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/machine_learning/cppNerals/include"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_RANDOM_DYN_LINK"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add directory="/Machine_Learning/CPP_Neural_Network/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 NeuralNetwork/fast"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/machine_learning/cppNerals/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 NeuralNetwork/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Machine_Learning/CPP_Neural_Network/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Machine_Learning/CPP_Neural_Network/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/Machine_Learning/CPP_Neural_Network/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/machine_learning/cppNerals/src/layer.cpp">
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/src/layer.cpp">
 			<Option target="NeuralNetwork"/>
 		</Unit>
-		<Unit filename="/machine_learning/cppNerals/src/main.cpp">
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/src/main.cpp">
 			<Option target="NeuralNetwork"/>
 		</Unit>
-		<Unit filename="/machine_learning/cppNerals/src/neural_network.cpp">
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/src/neural_network.cpp">
 			<Option target="NeuralNetwork"/>
 		</Unit>
-		<Unit filename="/machine_learning/cppNerals/src/neuron.cpp">
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/src/neuron.cpp">
 			<Option target="NeuralNetwork"/>
 		</Unit>
-		<Unit filename="/machine_learning/cppNerals/CMakeLists.txt">
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/../../usr/lib/x86_64-linux-gnu/cmake/BoostDetectToolset-1.74.0.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\"/>
+		</Unit>
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.74.0\"/>
+		</Unit>
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.74.0\"/>
+		</Unit>
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/../../usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.74.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.74.0\"/>
+		</Unit>
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/../../usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.74.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.74.0\"/>
+		</Unit>
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/../../usr/lib/x86_64-linux-gnu/cmake/boost_random-1.74.0/boost_random-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_random-1.74.0\"/>
+		</Unit>
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/../../usr/lib/x86_64-linux-gnu/cmake/boost_random-1.74.0/boost_random-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_random-1.74.0\"/>
+		</Unit>
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/../../usr/lib/x86_64-linux-gnu/cmake/boost_random-1.74.0/libboost_random-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_random-1.74.0\"/>
+		</Unit>
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/../../usr/lib/x86_64-linux-gnu/cmake/boost_random-1.74.0/libboost_random-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_random-1.74.0\"/>
+		</Unit>
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/../../usr/lib/x86_64-linux-gnu/cmake/boost_system-1.74.0/boost_system-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.74.0\"/>
+		</Unit>
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/../../usr/lib/x86_64-linux-gnu/cmake/boost_system-1.74.0/boost_system-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.74.0\"/>
+		</Unit>
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/../../usr/lib/x86_64-linux-gnu/cmake/boost_system-1.74.0/libboost_system-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.74.0\"/>
+		</Unit>
+		<Unit filename="/Machine_Learning/CPP_Neural_Network/../../usr/lib/x86_64-linux-gnu/cmake/boost_system-1.74.0/libboost_system-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.74.0\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
